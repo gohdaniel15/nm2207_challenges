@@ -8,7 +8,11 @@
   }
 
   function challenge3() {
-    _getArticleAndSetHTML(`<p><b>Challenge 3:</b> Welcome to my web page</p>`)
+    _getArticleAndSetHTML(`
+      <p>
+        <b>Challenge 3:</b> Welcome to my web page
+      </p>
+    `)
   }
 
   let challenge5 = () => {
@@ -19,7 +23,11 @@
     let x = 7
     let y = 5
 
-    _getArticleAndSetHTML(`<p><b>Challenge 5:</b> The difference between ${x} and ${y} is ${foo(x, y)}</p>`)
+    _getArticleAndSetHTML(`
+      <p>
+        <b>Challenge 5:</b> The difference between ${x} and ${y} is ${foo(x, y)}
+      </p>
+    `)
   }
 
   let challenge9 = () => {
@@ -36,10 +44,12 @@
     }
 
     let result = multi(7, 9)
-    let resultString = `<p><b>Challenge 9:</b> multi(7, 9) results</p>`
-                          + `<p>Sum: ${result.sum}</p>`
-                          + `<p>Difference: ${result.difference}</p>`
-                          + `<p>Product: ${result.product}</p>`
+    let resultString = `
+      <p><b>Challenge 9:</b> multi(7, 9) results</p>
+      <p>Sum: ${result.sum}</p>
+      <p>Difference: ${result.difference}</p>
+      <p>Product: ${result.product}</p>
+    `
     _getArticleAndSetHTML(resultString)
   }
 
@@ -60,7 +70,11 @@
       }
     }
 
-    _getArticleAndSetHTML(`<b>Challenge 12:</b> ${JSON.stringify(pointsum(point1, point2))}`)
+    _getArticleAndSetHTML(`
+      <p>
+        <b>Challenge 12:</b> ${JSON.stringify(pointsum(point1, point2))}
+      </p>
+    `)
   }
 
   challenge3()
